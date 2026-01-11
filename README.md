@@ -1,5 +1,9 @@
 # 🔀 DNS Switcher for Linux
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Bash](https://img.shields.io/badge/Language-Bash-green.svg)](https://www.gnu.org/software/bash/)
+[![Linux](https://img.shields.io/badge/Platform-Linux-blue.svg)](https://www.linux.org/)
+
 A simple and interactive script to switch from Yandex Cloud DNS to Google DNS, Cloudflare DNS, or custom DNS servers on Linux systems using systemd-resolved.
 
 Perfect for Yandex Cloud VMs and other Linux systems that use systemd-resolved for DNS management.
@@ -214,17 +218,6 @@ This script modifies system DNS settings. While it creates backups, always test 
 ## 🌟 Credits
 
 Created for easy DNS switching on Yandex Cloud VMs and other Linux systems.
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-- Open an issue on GitHub
-- Check the [Troubleshooting](#-troubleshooting) section
-
-## 🔗 Related Projects
-
-- [Linux Optimizer](https://github.com/hawshemi/Linux-Optimizer) - Comprehensive Linux optimization script
-- [VK IP Hunter](https://github.com/AndreyTimoschuk/vk-ip-hunter) - VK Cloud IP management tool
 
 ---
 
