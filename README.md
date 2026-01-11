@@ -40,14 +40,14 @@ Perfect for Yandex Cloud VMs and other Linux systems that use systemd-resolved f
 ### One-line Installation and Execution
 
 ```bash
-wget "https://raw.githubusercontent.com/YOUR_USERNAME/dns-switcher/main/dns-switcher.sh" -O dns-switcher.sh && chmod +x dns-switcher.sh && sudo bash dns-switcher.sh
+wget "https://raw.githubusercontent.com/AndreyTimoschuk/dns-switcher/main/dns-switcher.sh" -O dns-switcher.sh && chmod +x dns-switcher.sh && sudo bash dns-switcher.sh
 ```
 
 ### Manual Installation
 
 1. Download the script:
 ```bash
-wget https://raw.githubusercontent.com/YOUR_USERNAME/dns-switcher/main/dns-switcher.sh
+wget https://raw.githubusercontent.com/AndreyTimoschuk/dns-switcher/main/dns-switcher.sh
 ```
 
 2. Make it executable:
@@ -82,7 +82,7 @@ The script will:
 Download and run the uninstaller:
 
 ```bash
-wget https://raw.githubusercontent.com/YOUR_USERNAME/dns-switcher/main/dns-switcher-uninstall.sh
+wget https://raw.githubusercontent.com/AndreyTimoschuk/dns-switcher/main/dns-switcher-uninstall.sh
 chmod +x dns-switcher-uninstall.sh
 sudo ./dns-switcher-uninstall.sh
 ```
@@ -224,7 +224,7 @@ If you encounter any issues or have questions:
 ## 🔗 Related Projects
 
 - [Linux Optimizer](https://github.com/hawshemi/Linux-Optimizer) - Comprehensive Linux optimization script
-- [UFO Blacklist Script](https://github.com/YOUR_USERNAME/ufo-blacklist-script) - Automated IP blacklisting
+- [VK IP Hunter](https://github.com/AndreyTimoschuk/vk-ip-hunter) - VK Cloud IP management tool
 
 ---
 
