@@ -185,9 +185,6 @@ EOF
     
     print_message "$GREEN" "✓ systemd-resolved restarted"
     echo ""
-    
-    # Set DNS on each network interface
-    configure_interface_dns
 }
 
 # Configure DNS on network interfaces
