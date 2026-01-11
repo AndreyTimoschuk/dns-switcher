@@ -185,6 +185,39 @@ EOF
     
     print_message "$GREEN" "✓ systemd-resolved restarted"
     echo ""
+    
+    # Set DNS on each network interface
+    configure_interface_dns
+}
+
+# Configure DNS on network interfaces
+configure_interface_dns() {
+    print_message "$BLUE" "🔧 Configuring DNS on network interfaces..."
+    
+    # Get all active network interfaces (excluding lo, docker, warp, etc.)
+    local interfaces=$(ip -o link show | awk -F': ' '{print $2}' | grep -E '^(eth|ens|enp)' || true)
+    
+    if [[ -z "$interfaces" ]]; then
+        print_message "$YELLOW" "⚠️  No standard network interfaces found (eth*, ens*, enp*)"
+        return
+    fi
+    
+    local dns_array=($DNS_SERVERS)
+    
+    for interface in $interfaces; do
+        # Check if interface is up
+        if ip link show "$interface" 2>/dev/null | grep -q "state UP"; then
+            print_message "$BLUE" "  Setting DNS on $interface..."
+            
+            # Set DNS servers on the interface
+            resolvectl dns "$interface" ${dns_array[@]} 2>/dev/null || \
+                print_message "$YELLOW" "    ⚠️  Could not set DNS on $interface"
+            
+            print_message "$GREEN" "  ✓ DNS configured on $interface"
+        fi
+    done
+    
+    echo ""
 }
 
 # Restart PBR if exists

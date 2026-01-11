@@ -186,6 +186,7 @@ main() {
     read -p "Select backup to restore (0-${#BACKUP_FILES[@]}): " choice
     
     restore_backup "$choice"
+    remove_persistent_service
     restart_services
     verify_dns
     
