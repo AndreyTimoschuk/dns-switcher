@@ -158,6 +158,7 @@ FallbackDNS=9.9.9.9
 Domains=~.
 DNSSEC=no
 DNSOverTLS=no
+Cache=yes
 ```
 
 ### Why Not Modify cloud-init?
