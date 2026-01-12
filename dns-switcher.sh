@@ -173,6 +173,7 @@ FallbackDNS=$FALLBACK_DNS
 Domains=~.
 DNSSEC=no
 DNSOverTLS=no
+Cache=yes
 EOF
     
     print_message "$GREEN" "✓ Updated /etc/systemd/resolved.conf"
