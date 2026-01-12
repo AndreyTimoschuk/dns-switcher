@@ -1,4 +1,4 @@
-# 🔀 DNS Switcher for Linux
+# 🔀 DNS Switcher for YandexCloud
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Bash](https://img.shields.io/badge/Language-Bash-green.svg)](https://www.gnu.org/software/bash/)
